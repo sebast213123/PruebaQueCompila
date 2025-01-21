@@ -10,7 +10,7 @@ public partial class Pagina1 : ContentPage
 
     public class Pais
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey, AutoIncrement] 
         public int Id { get; set; }
         public string NombreOficial { get; set; }
         public string Region { get; set; }
