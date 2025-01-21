@@ -1,13 +1,12 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="PruebaQueCompila.Pagina1">
-
+ 1.0" encoding="utf-8" ?
+    ><ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                  x:Class="PruebaQueCompila.Pagina1">
     <StackLayout Padding="20">
         <Entry x:Name="entryNombrePais" Placeholder="Ingrese el nombre del país" />
         <Button Text="Buscar" Clicked="OnBuscarClicked"/>
         <Button Text="Limpiar" Clicked="OnLimpiarClicked"/>
-        <Label x:Name="labelPais" />
+        <Label x:Name="labelPais" LineBreakMode="WordWrap" />
     </StackLayout>
-
 </ContentPage>
 

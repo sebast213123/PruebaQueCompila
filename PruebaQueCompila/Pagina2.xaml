@@ -1,9 +1,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="PruebaQueCompila.Pagina2"
-             Title="Tu Nombre y Apellido">
-
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="PruebaQueCompila.Pagina2" 
+             Title="Sebastian Cadena">
     <StackLayout Padding="20">
+        <Button Text="Actualizar Lista" Clicked="OnActualizarClicked" />
         <ListView x:Name="listViewPaises">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -12,5 +12,4 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
-
 </ContentPage>
