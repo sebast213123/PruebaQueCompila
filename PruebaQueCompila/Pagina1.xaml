@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PruebaQueCompila.Pgina1"
-             Title="Pgina1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PruebaQueCompila.Pagina1">
+
+    <StackLayout Padding="20">
+        <Entry x:Name="entryNombrePais" Placeholder="Ingrese el nombre del país" />
+        <Button Text="Buscar" Clicked="OnBuscarClicked"/>
+        <Button Text="Limpiar" Clicked="OnLimpiarClicked"/>
+        <Label x:Name="labelPais" />
+    </StackLayout>
+
 </ContentPage>
+
