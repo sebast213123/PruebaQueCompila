@@ -1,12 +1,23 @@
- 1.0" encoding="utf-8" ?
-    ><ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-                  x:Class="PruebaQueCompila.Pagina1">
-    <StackLayout Padding="20">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaQueCompila.Pagina1"
+             Title="Página 1">
+    <VerticalStackLayout Padding="20">
+        <!-- Campo de entrada para el nombre del país -->
         <Entry x:Name="entryNombrePais" Placeholder="Ingrese el nombre del país" />
-        <Button Text="Buscar" Clicked="OnBuscarClicked"/>
-        <Button Text="Limpiar" Clicked="OnLimpiarClicked"/>
-        <Label x:Name="labelPais" LineBreakMode="WordWrap" />
-    </StackLayout>
+
+        <!-- Botón para buscar -->
+        <Button x:Name="btnBuscar" Text="Buscar" Clicked="OnBuscarClicked" />
+
+        <!-- Botón para limpiar -->
+        <Button x:Name="btnLimpiar" Text="Limpiar" Clicked="OnLimpiarClicked" />
+
+        <!-- Etiqueta para mostrar información del país -->
+        <Label x:Name="labelPais" Text="Información del país aparecerá aquí" 
+               FontSize="16" TextColor="Black" />
+    </VerticalStackLayout>
 </ContentPage>
+
+
+
 
